@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RugSafe | Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.73.2/lib/index.iife.min.js"></script>
   <style>
     body {
       margin: 0;
@@ -54,6 +55,25 @@
       font-size: 18px;
       color: #888;
     }
+    #connectWalletBtn {
+      margin-top: 30px;
+      padding: 10px 30px;
+      font-size: 24px;
+      background-color: #0ff;
+      border: none;
+      border-radius: 12px;
+      font-family: 'Amatic SC', cursive;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    #connectWalletBtn:hover {
+      background-color: #0cc;
+    }
+    #walletAddress {
+      margin-top: 20px;
+      font-size: 20px;
+      color: lime;
+    }
   </style>
 </head>
 <body>
@@ -78,11 +98,40 @@
     <h2>The Safest Rug You’ll Ever Step On 🛡🔥</h2>
     <p>Welcome to RugSafe, the Solana-based meme token project where rugs don't pull you — they protect you. Fair launch. No dev wallets. Transparent burns. Fully public.</p>
     <p>Ready to be part of the next meme movement? Grab some $RUGSAFE today and join the hall of legends!</p>
+
+    <!-- Wallet Connect Button -->
+    <button id="connectWalletBtn">Connect Wallet</button>
+    <p id="walletAddress"></p>
   </section>
 
   <footer>
     &copy; 2025 RugSafe — Community First. Always.
   </footer>
+
+  <!-- Phantom Wallet JS -->
+  <script>
+    const connectBtn = document.getElementById("connectWalletBtn");
+    const walletText = document.getElementById("walletAddress");
+
+    async function connectWallet() {
+      if ('solana' in window) {
+        const provider = window.solana;
+        if (provider.isPhantom) {
+          try {
+            const resp = await provider.connect();
+            walletText.innerText = "Wallet: " + resp.publicKey.toString();
+            connectBtn.innerText = "Connected ✅";
+          } catch (err) {
+            walletText.innerText = "Connection rejected.";
+          }
+        }
+      } else {
+        alert("Phantom wallet not found! Please install it.");
+      }
+    }
+
+    connectBtn.addEventListener("click", connectWallet);
+  </script>
 
 </body>
 </html>
