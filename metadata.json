@@ -1,0 +1,43 @@
+{
+"name": "RugSafe",
+"symbol": "$RUGSAFE",
+"description": "RugSafe is a community-driven Solana token built by a 15-year-old developer, aiming to restore trust in the crypto space through transparency, locked liquidity, and a fun yet secure experience for all.",
+"image": "ipfs://bafkreigxa3v74m6eun22hlfthy6vroowdufuttemt66usace66wo3fvzay",
+"external_url": "https://rugsafe.github.io",
+"seller_fee_basis_points": 0,
+"attributes": [
+{
+"trait_type": "Purpose",
+"value": "Trust-Based Meme Token"
+},
+{
+"trait_type": "Age of Developer",
+"value": "15"
+},
+{
+"trait_type": "Liquidity Status",
+"value": "Community-Pooled"
+}
+],
+"collection": {
+"name": "RugSafe Token",
+"family": "Solana Projects"
+},
+"properties": {
+"files": [
+{
+"uri": "ipfs://bafkreigxa3v74m6eun22hlfthy6vroowdufuttemt66usace66wo3fvzay",
+"type": "image/png"
+}
+],
+"category": "image",
+"creators": [
+{
+"address": "Hhqy2ni1YvzTcDd88JHKxQtFJNxJspM1Nih5DbdDUdxT",
+"share": 100
+}
+]
+}
+}
+
+
