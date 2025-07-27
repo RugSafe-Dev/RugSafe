@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roadmap | RugSafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Amatic SC', cursive;
+      background: #0b0c10;
+      color: #fff;
+      background-image: radial-gradient(circle at top left, #0ff2, #000), url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-blend-mode: overlay;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      background: #121212;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+
+    nav a {
+      color: cyan;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-size: 1.8em;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      text-shadow: 0 0 10px cyan;
+      color: #00e6e6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #00ffff;
+      text-align: center;
+      text-shadow: 0 0 10px #0ff;
+      margin-bottom: 30px;
+    }
+
+    .timeline {
+      border-left: 4px solid #00ffff;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(#0ff, transparent);
+      animation: glowline 3s infinite alternate;
+    }
+
+    @keyframes glowline {
+      from { box-shadow: 0 0 5px #0ff; }
+      to { box-shadow: 0 0 20px #0ff; }
+    }
+
+    .milestone {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: rgba(0, 255, 255, 0.05);
+      border-left: 3px solid #0ff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    }
+
+    .milestone h2 {
+      font-size: 2.5em;
+      color: #00e6e6;
+      margin-bottom: 10px;
+      text-shadow: 0 0 6px cyan;
+    }
+
+    .milestone p {
+      font-size: 1.5em;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="buy.html">Buy</a>
+    <a href="sell.html">Sell</a>
+    <a href="tokenomics.html">Tokenomics</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="faq.html">FAQ</a>
+    <a href="team.html">Team</a>
+    <a href="donate.html">Donate</a>
+  </nav>
+
+  <div class="container">
+    <h1>📍 RugSafe Roadmap</h1>
+    <div class="timeline">
+      <div class="milestone">
+        <h2>🚀 Phase 1: Launch</h2>
+        <p>- Token creation & testing<br>- Build landing page <br>- Initial social media presence</p>
+      </div>
+      <div class="milestone">
+        <h2>💸 Phase 2: Utility & Faucet</h2>
+        <p>- Create faucet system<br>- Enable earn-to-hold rewards<br>- Manual withdrawal panel & token tracker</p>
+      </div>
+      <div class="milestone">
+        <h2>🔥 Phase 3: Burn & Trust</h2>
+        <p>- Launch burned tokens tracker<br>- Transparent supply dashboard<br>- Increase trust through team intros</p>
+      </div>
+      <div class="milestone">
+        <h2>🌐 Phase 4: Community & Growth</h2>
+        <p>- Telegram community bot<br>- Leaderboard for holders<br>- Small LP creation & marketing round</p>
+      </div>
+      <div class="milestone">
+        <h2>🛡️ Phase 5: RugProofing</h2>
+        <p>- Lock liquidity (manual)<br>- Add basic KYC (optional)<br>- Public whitepaper and audit (light)</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

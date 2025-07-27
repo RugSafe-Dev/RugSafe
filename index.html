@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RugSafe – Trust the Meme</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Amatic SC', cursive;
+      background: #0d0d0d;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #00f0ff, #ff00d4);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      font-size: 28px;
+      color: #ccc;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      padding: 12px 24px;
+      margin: 10px;
+      border: none;
+      font-size: 24px;
+      text-decoration: none;
+      background: linear-gradient(90deg, #ff00d4, #00f0ff);
+      color: black;
+      border-radius: 12px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 24px;
+      color: #ddd;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="buy.html">Buy</a>
+  <a href="sell.html">Sell</a>
+  <a href="tokenomics.html">Tokenomics</a>
+  <a href="whitepaper.html">Whitepaper</a>
+  <a href="roadmap.html">Roadmap</a>
+  <a href="team.html">Team</a>
+  <a href="donate.html">Donate</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
+<div class="hero">
+  <h1>RugSafe Token</h1>
+  <p>Restoring trust in memes — built by a 15-year-old, driven by community</p>
+  <div class="buttons">
+    <a href="buy.html">Buy Now</a>
+    <a href="whitepaper.html">Read Whitepaper</a>
+  </div>
+</div>
+
+<div class="about">
+  RugSafe is a meme token on Solana aiming to eliminate rugs by combining transparency, burned supply, and locked LP. It's your next chance to ape safely — community-owned and dev-transparent.
+</div>
+
+<div class="features">
+  <div class="feature">🔥 Burn Mechanism</div>
+  <div class="feature">🔐 Locked Liquidity</div>
+  <div class="feature">👨‍💻 Built by a 15-year-old dev</div
+  <div class="feature">⚖️ Fair Launch</div>
+</div>
+
+<!-- Particle.js Script -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 80 },
+    "size": { "value": 3 },
+    "move": { "speed": 1 },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#00ffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "color": { "value": "#ffffff" }
+  }
+});
+</script>
+
+</body>
+</html>
